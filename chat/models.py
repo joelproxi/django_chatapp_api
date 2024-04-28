@@ -32,6 +32,8 @@ class Message(Timestamps):
                         on_delete=models.CASCADE
     )
     content = models.TextField()
+    is_read = models.BooleanField(default=False)
+    is_edited = models.BooleanField(default=False)
 
     
 class ChatGroup(Timestamps):
