@@ -14,10 +14,15 @@ class ConversationSerializer(serializers.ModelSerializer):
         ]
         
 
-# class MessageSerializer(serializers.ModelSerializer):
+class MessageSerializer(serializers.ModelSerializer):
     
-#     class Meta:
-#         model = Message
-#         fields = [
-#             'id',
-#         ]
+    class Meta:
+        model = Message
+        fields = [
+            'id',
+            'sender',
+            'receiver',
+            'text_content',
+            'is_read',
+            'is_edited',
+        ]
