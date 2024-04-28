@@ -31,7 +31,7 @@ class Message(Timestamps):
                         related_name='receiver_user',
                         on_delete=models.CASCADE
     )
-    content = models.TextField()
+    text_content = models.TextField()
     is_read = models.BooleanField(default=False)
     is_edited = models.BooleanField(default=False)
 
