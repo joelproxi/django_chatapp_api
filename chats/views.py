@@ -10,3 +10,4 @@ class ConversationViewset(viewsets.ModelViewSet):
     queryset = Conversation.objects.all()
     serializer_class = ConversationSerializer
     
+    

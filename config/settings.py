@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'account.apps.AccountConfig', 
+    'account.apps.AccountsConfig', 
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     
     'rest_framework',
     
-    'chat.apps.ChatConfig',
+    'chat.apps.ChatsConfig',
 ]
 
 MIDDLEWARE = [

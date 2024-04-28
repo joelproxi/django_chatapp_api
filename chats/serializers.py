@@ -12,6 +12,11 @@ class ConversationSerializer(serializers.ModelSerializer):
             'name',
             'slug',
         ]
+        extra_kwargs = {
+            'slug': {
+                'read_only': True
+            }
+        }
         
 
 class MessageSerializer(serializers.ModelSerializer):
