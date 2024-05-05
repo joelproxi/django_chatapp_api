@@ -40,6 +40,8 @@ class CustomUserModel(AbstractUser):
     full_name = models.CharField(max_length=50)
     phone = models.CharField(max_length=12, unique=True)
     email = models.EmailField(unique=True)
+    bio = models.TextField(blank=True)
+    # photo = models.ImageField(upload_to='images/profile')
     REQUIRED_FIELDS = []
     USERNAME_FIELD = 'email'
     username = None
